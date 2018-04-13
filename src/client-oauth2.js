@@ -141,7 +141,7 @@ function parseResponseBody (body) {
  * @return {string}
  */
 function sanitizeScope (scopes) {
-  return Array.isArray(scopes) ? scopes.join(' ') : toString(scopes)
+  return Array.isArray(scopes) ? scopes.join(',') : toString(scopes)
 }
 
 /**
